@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+:root{
+	--primary-color: darkviolet;
+	--secondary-color: darkblue;
+	--primary-grad-color: linear-gradient(to right,darkviolet,deepskyblue);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 0;
+	marign: 0;
+}
+
+/*Start Header Section*/
+
+/*Start Header Intro*/
+
+.headerintros{
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 15px 0;
+	/*display: none;	*/
+
+}
+
+@media (min-width: 1200px){
+	.visiblelgs{
+		display: block;
+	}
+}
+
+.infos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.headericons a{
+	color: #fff;
+	margin: 0 10px;
+}
+
+/*End Header Intro*/
+
+header{
+	height: 80vh;
+	background: var(--primary-grad-color);
+	position: relative;
+}
+
+/*Start Nav Bar*/
+
+.menustyles li a{
+	color: #000;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+    
+    transition: color 0.5s;
+
+}
+
+.menustyles li a:hover{
+	color: var(--primary-color);
+}
+
+.navbuttons{
+	border: none;
+}
+
+.navbuttons:focus{
+	/*border: none;*/
+	box-shadow: none;
+}
+
+.lines1,.lines2,.lines3{
+	width: 17px;
+	height: 2px;
+	margin: 3px;
+}
+
+.crossxs .lines1{
+     transform: rotate(-45deg)translate(-3px,4px);
+}
+
+.crossxs .lines2{
+  opacity: 0;
+}
+
+.crossxs .lines3{
+    transform: rotate(45deg)translate(-3px,-4px);
+}
+
+
+/*End Nav Bar*/
+
+
+/*Start Banner*/
+.banners{
+	width: 90%;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	transform: translate(-50%,-50%);
+}
+
+.bannerheaders{
+   font-weight: bold;
+   letter-spacing: 3px ;
+   animation-name: bnanis;
+   animation-duration: 2s;
+}
+.bannerparagraphs,.banner-btn{
+	animation-name: bnanis;
+	animation-duration: 2s;
+	animation-delay: 0.2s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes bnanis{
+	from{
+		transform: translate(0,100px);
+		opacity: 0;
+	}
+
+	to{
+		transform: translate(0,0);
+		opacity: 1;
+	}
+}
+
+
+/*End Banner*/
+
+.studentgroups{
+	width: 40%;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	z-index: 1;
+}
+
+.waves{
+width: 100%;
+
+position: absolute;
+bottom: -5px;
+left: 0;
+
+z-index: 2;
+}
+
+/*End Header Section*/
+
+.counters{
+	width: 100%;
+	height: 20vh;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
+
+.counters .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.counteritems{
+	float: left;
+	width: 25%;
+	text-align: center;
+
+	border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.counteritems:last-child{
+	border-right: none;
+}
+
+.counteritems .fas{
+	background: var(--primary-grad-color);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+
+/*Start About Us Section*/
+.aboutuss{
+	background-image: linear-gradient(
+     rgba(0,0,0,0.3),
+     rgba(0,0,0,0.3)
+	),url('../assets/img/banner/banner4.jpg');
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+
+}
+
+.aboutuss ul li{
+	list-style-type: none;
+	background-color: var(--secondary-color);
+	margin: 20px 0;
+}
+/*End About Us section*/
+
+
+
+
+
+
+
+
+
